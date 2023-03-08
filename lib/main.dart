@@ -25,9 +25,25 @@ class MainApp extends StatelessWidget {
                     child: Center(
                       child: Text(
                         's',
-                        style: TextStyle(fontSize: 30),
+                        style: TextStyle(fontSize: 50, color: Colors.white),
                       ),
                     )),
+              ),
+              Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Padding(
+                  padding: EdgeInsets.only(left: 20),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Enter Your Full Name',
+                        icon: Icon(Icons.person)),
+                  ),
+                ),
               )
             ],
           )),
