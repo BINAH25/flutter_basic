@@ -15,14 +15,19 @@ class MainApp extends StatelessWidget {
             children: [
               Center(
                 child: Container(
-                  height: 200,
-                  width: 200,
-                  margin: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.blue,
-                  ),
-                ),
+                    height: 100,
+                    width: 100,
+                    margin: EdgeInsets.only(top: 40),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.blue,
+                        border: Border.all(color: Colors.black, width: 2)),
+                    child: Center(
+                      child: Text(
+                        's',
+                        style: TextStyle(fontSize: 30),
+                      ),
+                    )),
               )
             ],
           )),
