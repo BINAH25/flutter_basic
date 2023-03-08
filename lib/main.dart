@@ -8,13 +8,37 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Day 1",
+      title: "App 2",
       home: Scaffold(
-        appBar: AppBar(title: Text('Day 1')),
-        body: Center(
-          child: Text('Hello Welcome to Louis World!'),
-        ),
-      ),
+          appBar: AppBar(title: Text('Conatainer Widget')),
+          body: Row(
+            children: [
+              Container(
+                height: 50,
+                width: 100,
+                margin: EdgeInsets.all(20),
+                color: Colors.tealAccent,
+                padding: EdgeInsets.all(10),
+                child: Text('First Row'),
+              ),
+              Container(
+                height: 50,
+                width: 100,
+                margin: EdgeInsets.all(20),
+                color: Colors.tealAccent,
+                padding: EdgeInsets.all(10),
+                child: Text('Second Row'),
+              ),
+              Container(
+                height: 50,
+                width: 100,
+                margin: EdgeInsets.all(20),
+                color: Colors.tealAccent,
+                padding: EdgeInsets.all(10),
+                child: Text('Third Row'),
+              )
+            ],
+          )),
     );
   }
 }
