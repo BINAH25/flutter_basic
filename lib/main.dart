@@ -10,32 +10,19 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: "App 2",
       home: Scaffold(
-          appBar: AppBar(title: Text('Conatainer Widget')),
-          body: Row(
+          appBar: AppBar(title: Text('Portfolio')),
+          body: Column(
             children: [
-              Container(
-                height: 50,
-                width: 100,
-                margin: EdgeInsets.all(20),
-                color: Colors.tealAccent,
-                padding: EdgeInsets.all(10),
-                child: Text('First Row'),
-              ),
-              Container(
-                height: 50,
-                width: 100,
-                margin: EdgeInsets.all(20),
-                color: Colors.tealAccent,
-                padding: EdgeInsets.all(10),
-                child: Text('Second Row'),
-              ),
-              Container(
-                height: 50,
-                width: 100,
-                margin: EdgeInsets.all(20),
-                color: Colors.tealAccent,
-                padding: EdgeInsets.all(10),
-                child: Text('Third Row'),
+              Center(
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  margin: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.blue,
+                  ),
+                ),
               )
             ],
           )),
